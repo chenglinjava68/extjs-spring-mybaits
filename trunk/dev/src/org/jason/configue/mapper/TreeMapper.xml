@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.jason.mapper.TreeMapper">
+	<cache />
+	<resultMap id="TreeResultMap" type="org.jason.dto.TreeDTO">
+		<id property="id" column="KEY_" />
+		<result property="text" column="NAME_" />
+	</resultMap>
+
+	<select id="selectTree" resultMap="TreeResultMap">
+		SELECT NAME_ , KEY_
+		FROM
+		ACT_RE_PROCDEF 
+	</select>
+	
+</mapper>
