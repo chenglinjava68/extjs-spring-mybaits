@@ -10,6 +10,7 @@
 	<insert id="insert" parameterType="Class">
 		INSERT INTO CLASS
 		VALUES(#{classId},#{className})
+
 	</insert>
 	<select id="selectOne" parameterType="int" resultType="Class">
 		select *
